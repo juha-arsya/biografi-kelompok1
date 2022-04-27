@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#ffA85CF9"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:elevation="10dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/search"
+                >
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/arrow_back"
+                >
+            </ImageView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biodata"
+                android:textSize="32sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelompok 1"
+                android:textSize="22sp"
+                android:fontFamily="@font/roboto_bold_italic"
+                android:layout_gravity="center"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:elevation="12dp"
+            android:layout_margin="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/image1"
+                        android:layout_centerVertical="true"
+                        >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:id="@+id/namanim1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/image1"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Muhammad Juha Arsyadani Arif"
+                            android:textSize="16sp"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="21120120140146"
+                            android:textSize="14sp"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/image1"
+                        android:layout_below="@+id/namanim1"
+                        android:orientation="horizontal"
+                        android:padding="10sp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/instagram1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/instagram"
+                                >
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="juha_arsya"
+                                android:textSize="12sp"
+                                android:paddingStart="5dp"
+                                >
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_below="@+id/instagram1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/twitter"
+                                >
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="juha_arsya"
+                                android:textSize="12sp"
+                                android:paddingStart="5dp"
+                                >
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="250dp"
+                    android:layout_gravity="center"
+                    android:layout_height="3dp"
+                    android:background="#B1B1B1"
+                    android:visibility="visible"
+                    android:layout_margin="4dp"
+                    >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Asal                 : Demak"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="TTL                  : Demak, 29 April 2001"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Hobi                 : Ngegame, Mendaki gunung, Nonton film"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Motto Hidup   : Pilih yang kau suka, dan nikmati prosesnya"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:elevation="12dp"
+            android:layout_margin="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/image2"
+                        >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:id="@+id/namanim2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/image2"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Rama Aryasuta Weihan"
+                            android:textSize="16sp"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="21120120120007"
+                            android:textSize="14sp"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/image2"
+                        android:layout_below="@+id/namanim2"
+                        android:orientation="horizontal"
+                        android:padding="10sp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/instagram2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/instagram"
+                                >
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="ramaarya1"
+                                android:textSize="12sp"
+                                android:paddingStart="5dp"
+                                >
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_below="@+id/instagram2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/twitter"
+                                >
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="ramaarya1"
+                                android:textSize="12sp"
+                                android:paddingStart="5dp"
+                                >
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="250dp"
+                    android:layout_gravity="center"
+                    android:layout_height="3dp"
+                    android:background="#B1B1B1"
+                    android:visibility="visible"
+                    android:layout_margin="4dp"
+                    >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Asal                 : Jambi"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="TTL                  : Jambi, 3 Juli 2002
+"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Hobi                 : Bermain musik, Desain 3d"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Motto Hidup   : Hidup ini keras, jadi biasakanlah dirimu"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:elevation="12dp"
+            android:layout_margin="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/image3"
+                        >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:id="@+id/namanim3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/image3"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Naufal Daffa' Riswanda"
+                            android:textSize="16sp"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="21120120130107"
+                            android:textSize="14sp"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/image3"
+                        android:layout_below="@+id/namanim3"
+                        android:orientation="horizontal"
+                        android:padding="10sp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/instagram3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/instagram"
+                                >
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="dapa_undip"
+                                android:textSize="12sp"
+                                android:paddingStart="5dp"
+                                >
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_below="@+id/instagram3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/twitter"
+                                >
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="dapa_undip"
+                                android:textSize="12sp"
+                                android:paddingStart="5dp"
+                                >
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="250dp"
+                    android:layout_gravity="center"
+                    android:layout_height="3dp"
+                    android:background="#B1B1B1"
+                    android:visibility="visible"
+                    android:layout_margin="4dp"
+                    >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Asal                 : Bogor"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="TTL                  : Kudus, 17 Maret 2002"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Hobi                 : Main game"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Motto Hidup   : Do or Do Not, There is No Try"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:elevation="12dp"
+            android:layout_margin="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/image4"
+                        android:layout_centerVertical="true"
+                        >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:id="@+id/namanim4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/image4"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Reindrow Owen Simangunsong"
+                            android:textSize="16sp"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="21120120140169"
+                            android:textSize="14sp"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/image4"
+                        android:layout_below="@+id/namanim4"
+                        android:orientation="horizontal"
+                        android:padding="10sp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/instagram4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/instagram"
+                                >
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="reindrowen24"
+                                android:textSize="12sp"
+                                android:paddingStart="5dp"
+                                >
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_below="@+id/instagram4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/twitter"
+                                >
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="reindrowen24"
+                                android:textSize="12sp"
+                                android:paddingStart="5dp"
+                                >
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="250dp"
+                    android:layout_gravity="center"
+                    android:layout_height="3dp"
+                    android:background="#B1B1B1"
+                    android:visibility="visible"
+                    android:layout_margin="4dp"
+                    >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Asal                 : Balige"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="TTL                  : Situa-tua, 24 Desember 2002"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Hobi                 : Jalan-jalan, bermain game"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Motto Hidup   : Be brafe, not safe"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:elevation="12dp"
+            android:layout_margin="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/image5"
+                        android:layout_centerVertical="true"
+                        >
+                    </ImageView>
+
+                    <LinearLayout
+                        android:id="@+id/namanim5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/image5"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Muhammad Raihan Maulana"
+                            android:textSize="16sp"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="21120120120027"
+                            android:textSize="14sp"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/image5"
+                        android:layout_below="@+id/namanim5"
+                        android:orientation="horizontal"
+                        android:padding="10sp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/instagram5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/instagram"
+                                >
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="raihanmhz2"
+                                android:textSize="12sp"
+                                android:paddingStart="5dp"
+                                >
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_below="@+id/instagram5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/twitter"
+                                >
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="raihanmhz2"
+                                android:textSize="12sp"
+                                android:paddingStart="5dp"
+                                >
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="250dp"
+                    android:layout_gravity="center"
+                    android:layout_height="3dp"
+                    android:background="#B1B1B1"
+                    android:visibility="visible"
+                    android:layout_margin="4dp"
+                    >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Asal                 : Banda Aceh"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="TTL                  : Surakarta, 6 Oktober 2002"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Hobi                 : Do your best and let god do the rest."
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textSize="14sp"
+                            android:text="Motto Hidup   : Membaca Komik, Bermain game, Bermusik"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
